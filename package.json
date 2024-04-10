@@ -1,0 +1,11 @@
+{
+  "name": "server-setup",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hess",
+    "email": "hessro@oregonstate.edu"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
