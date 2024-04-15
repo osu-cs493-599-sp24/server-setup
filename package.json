@@ -5,7 +5,13 @@
     "name": "Hess",
     "email": "hessro@oregonstate.edu"
   },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
