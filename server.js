@@ -67,6 +67,19 @@ app.post("/lodgings", function (req, res, next) {
     }
 })
 
+/*
+ * GET /lodgings/{id}
+ */
+app.get("/lodgings/:id", function (req, res, next) {
+    console.log("  -- req.params:", req.params)
+    const id = parseInt(req.params.id)
+    if (lodgings[id]) {
+        res.status(200).send(lodgings[id])
+    } else {
+        next()
+    }
+})
+
 app.use("*", function (req, res, next) {
     console.log("  -- 404!")
     res.status(404).send({
